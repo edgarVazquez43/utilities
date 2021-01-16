@@ -1,0 +1,10 @@
+###########################
+####    GIT-PROMTP     ####
+green="\[\033[01;32m\]"
+blue="\[\033[01;34m\]"
+purple="\[\033[01;35m\]"
+red="\[\033[01;31m\]"
+yellow="\[\033[01;33m\]"
+reset="\[\033[0m\]"
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="$red\u@$green\h$yellow:$red\$(__git_ps1)$blue\\W$green->$reset "
